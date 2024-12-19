@@ -1,0 +1,139 @@
+/* ===============================
+   Checkout Page Styles
+================================ */
+
+/* Checkout Container */
+.checkout-container {
+  max-width: 600px; /* Set container width */
+  margin: 2rem auto; /* Center align */
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly less transparent for better readability */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  color: #333; /* Text color */
+}
+
+/* Form Header */
+.form-header {
+  text-align: center;
+  color: #ff4c4c; /* Accent color */
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+/* Form Section */
+.form-section {
+  margin-bottom: 1.5rem; /* Space between form sections */
+}
+
+/* Form Labels */
+label {
+  display: block; /* Make labels block elements */
+  margin-bottom: 0.5rem;
+  color: #333; /* Dark text */
+  font-weight: bold;
+}
+
+/* Input Fields, Select, and Button */
+input,
+select,
+button {
+  width: 100%; /* Full width */
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd; /* Light grey border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 1rem;
+}
+
+/* Form Button */
+button {
+  background-color: #ff4c4c; /* Primary button color */
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+button:hover {
+  background-color: #e63939; /* Darker red on hover */
+}
+
+/* Order Summary Styles */
+.order-summary {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+}
+
+.order-summary h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.order-summary p {
+  font-size: 1rem;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+/* Discount Section */
+.discount-section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+}
+
+.discount-section label {
+  font-size: 1rem;
+  color: #333;
+}
+
+.discount-section input {
+  display: inline-block;
+  width: 60%;
+  margin-right: 10px;
+}
+
+.discount-section button {
+  display: inline-block;
+  width: 35%;
+  background-color: #28a745; /* Green for apply button */
+}
+
+.discount-section button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Payment Fields - M-Pesa Specific */
+.mpesa-fields {
+  display: block; /* Always visible for M-Pesa */
+}
+
+/* Mobile Payment (M-Pesa) Number Input */
+#mpesa-number {
+  margin-bottom: 2rem; /* Space after M-Pesa number input */
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 600px) {
+  .checkout-container {
+    padding: 1rem;
+    max-width: 100%;
+  }
+  .form-header {
+    font-size: 1.2rem;
+  }
+  .order-summary h2 {
+    font-size: 1.1rem;
+  }
+  .order-summary p {
+    font-size: 0.9rem;
+  }
+}

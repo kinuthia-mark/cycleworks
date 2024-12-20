@@ -1,23 +1,20 @@
-/* ===============================
-   1. Global Styles and Reset
-================================ */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* Body */
 body {
   font-family: 'Calibri', Arial, sans-serif;
-  color: #fff; /* White text for contrast */
+  color: #fff;
   overflow-x: hidden;
   min-height: 100vh;
-  background: url('images/flag 1.png') center / cover no-repeat fixed;
+  background: url('images/theme.png') center / cover no-repeat fixed;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  
 }
 
-/* Full-page dark overlay with slight transparency */
+/* Overlay */
 .overlay {
-  background: rgba(0, 0, 0, 0.5); /* Dark background with 50% transparency */
+  background: rgba(0, 0, 0, 0.5);
   position: relative;
   min-height: 100vh;
   padding: 0;
@@ -25,10 +22,11 @@ body {
   flex-direction: column;
 }
 
-/* ===============================
-   2. Navbar Styles
-================================ */
+/* Navbar */
 .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,44 +38,37 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
-  color: #fff; /* White logo text */
+  color: #fff;
   transition: color 0.3s;
 }
 
 .navbar .menu a {
   text-decoration: none;
-  color: #fff; /* White menu links */
+  color: #fff;
   margin: 0 1rem;
   transition: color 0.3s;
 }
 
 .navbar .menu a:hover,
 .navbar .menu a.active {
-  color: #ff4c4c; /* Light red hover/active effect */
+  color: #ff4c4c;
 }
 
-/* ===============================
-   4. Footer Styles
-================================ */
+/* Footer Section */
 footer {
+  background: linear-gradient(90deg, #000, #ff4c4c);
   text-align: center;
-  padding: 1rem 0;
-  background: #000; /* Dark background with 50% transparency */
+  padding: 2rem 1rem;
   margin-top: auto;
 }
 
-footer p {
-  margin-bottom: 0.5rem;
-}
-
 .footer-icons a {
-  color: #fff; /* White footer icons */
+  color: #fff;
   font-size: 1.5rem;
   margin: 0 0.5rem;
   transition: color 0.3s;
 }
 
 .footer-icons a:hover {
-  color: #ff4c4c; /* Light red hover effect */
+  color: #00aaff;
 }
-

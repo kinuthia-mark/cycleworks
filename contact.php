@@ -102,38 +102,5 @@
       </div>
     </footer>
   </div>
-
-  <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = htmlspecialchars(trim($_POST['name']));
-    $email = htmlspecialchars(trim($_POST['email']));
-    $message = htmlspecialchars(trim($_POST['message']));
-
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo "Invalid email format. Please go back and try again.";
-        exit;
-    }
-
-    $to = "client@example.com";
-    $subject = "New Contact Form Submission from $name";
-
-    $emailContent = "
-    You have received a new message:\n\n
-    Name: $name\n
-    Email: $email\n\n
-    Message:\n$message\n
-    ";
-
-    $headers = "From: $email\r\nReply-To: $email\r\n";
-
-    if (mail($to, $subject, $emailContent, $headers)) {
-        header("Location: thank-you.html");
-        exit;
-    } else {
-        echo "Something went wrong. Please try again.";
-    }
-}
-?>
-
 </body>
 </html>

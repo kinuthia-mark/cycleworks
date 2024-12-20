@@ -1,53 +1,71 @@
-/* ===============================
- Section Styles
-================================ */
+/* About, Mission, and Values Sections */
 section {
-    padding: 3rem 2rem;
-    text-align: center;
-  }
-  
-  .about-section,
-  .mission-section,
-  .values-section {
-    margin: 2rem auto;
-    max-width: 800px;
-  }
-  
-  section h1,
-  section h2 {
-    color: #ff4c4c; /* Bold red headings */
-    margin-bottom: 1rem;
-  }
-  
-  section p {
-    color: #fff; /* White paragraph text */
-    line-height: 1.6;
-  }
-  
-  /* Values Grid Layout */
-  .values-grid {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-  }
-  
-  .value-card {
-    background: #000;
-    padding: 1.5rem;
-    border-radius: 8px;
-    text-align: center;
-    min-width: 250px;
-    max-width: 300px;
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  
-  .value-card h3 {
-    color: #ff4c4c; /* Red card headings */
-  }
-  
-  .value-card:hover {
-    transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-  }
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.about-section,
+.mission-section,
+.values-section {
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+section h1,
+section h2 {
+  color: #ff4c4c; /* Bold red headings */
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+section p {
+  color: #fff; /* White paragraph text */
+  line-height: 1.6;
+  font-size: 1.2rem;
+}
+
+/* Values Grid Layout */
+.values-grid {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.value-card {
+  background: #000;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  min-width: 250px;
+  max-width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.value-card i {
+  font-size: 2rem;
+  color: #ff4c4c;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.value-card h3 {
+  color: #ff4c4c; /* Red card headings */
+  margin-bottom: 1rem;
+}
+
+.value-card p {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.value-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.value-card:hover i {
+  transform: scale(1.2);
+  color: #e63939;
+}

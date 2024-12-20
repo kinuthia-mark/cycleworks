@@ -9,6 +9,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+  <!-- Header Section -->
   <header>
     <nav class="navbar">
       <div class="logo">
@@ -28,7 +29,9 @@
     </nav>
   </header>
 
+  <!-- Main Section -->
   <main>
+    <!-- Products Section -->
     <section class="category">
       <h1>Our Products</h1>
       <div id="product-grid" class="product-grid"></div>
@@ -40,32 +43,33 @@
     </section>
   </main>
 
+  <!-- Modal for Product Details -->
   <div id="product-modal" class="product-modal">
     <div class="modal-content">
       <span class="close-btn">&times;</span>
       <div class="modal-body">
-      <img id="modal-product-image" src="placeholder.png" alt="Product Image">
+        <img id="modal-product-image" src="placeholder.png" alt="Product Image">
         <h2 id="modal-product-name"></h2>
         <p id="modal-product-description"></p>
         <div id="modal-product-price"></div>
         <div id="modal-product-stock"></div>
-        <button id="add-to-cart-btn" class="buy-button" onclick="addToCart(1)">Add to Cart</button>
-        <button id="continue-shopping-btn" class="buy-button">Continue Shopping</button>
+        <button id="add-to-cart-btn" class="buy-button">Add to Cart</button>
+        <button id="continue-shopping-btn" class="continue-shopping-btn">Continue Shopping</button>
       </div>
     </div>
   </div>
 
   <!-- Footer Section -->
   <footer>
-      <p>&copy; 2024 CycleWorks Enterprises. All Rights Reserved.</p>
-      <div class="footer-icons">
-        <a href="https://www.facebook.com/profile.php?id=61555845413032"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com/cycleworkske/"><i class="fab fa-instagram"></i></a>
-      </div>
-    </footer>
+    <p>&copy; 2024 CycleWorks Enterprises. All Rights Reserved.</p>
+    <div class="footer-icons">
+      <a href="https://www.facebook.com/profile.php?id=61555845413032"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/cycleworkske/"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
 
+  <!-- JavaScript -->
   <script src="category.js"></script>
-
 </body>
 </html>

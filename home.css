@@ -5,8 +5,14 @@
   align-items: center;
   text-align: center;
   height: 70vh;
-  color: white;
   padding: 0 1rem;
+  color: white;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.5); /* Transparent overlay */
+  padding: 2rem;
+  border-radius: 10px;
 }
 
 .hero-content h1 {
@@ -36,8 +42,8 @@
 /* Why Choose Us Section */
 .why-choose-us {
   padding: 4rem 1rem;
-  color: white;
   text-align: center;
+  color: white;
 }
 
 .why-choose-us h2 {
@@ -60,11 +66,24 @@
   transition: transform 0.3s;
 }
 
-.feature-card h3 {
-  margin-bottom: 1rem;
+.feature-card i {
+  font-size: 2rem;
   color: #ff4c4c;
+  transition: transform 0.3s, color 0.3s;
 }
 
 .feature-card:hover {
   transform: scale(1.05);
 }
+
+.feature-card:hover i {
+  transform: scale(1.2);
+  color: #e63939;
+}
+
+.feature-card h3 {
+  margin-bottom: 1rem;
+  color: #ff4c4c;
+}
+
+

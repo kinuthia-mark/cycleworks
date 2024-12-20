@@ -50,14 +50,17 @@
         <h2>Our Values</h2>
         <div class="values-grid">
           <div class="value-card">
+            <i class="fas fa-check-circle"></i>
             <h3>Top-Notch Quality</h3>
             <p>Trusted parts that deliver reliability and long-lasting performance.</p>
           </div>
           <div class="value-card">
+            <i class="fas fa-user-friends"></i>
             <h3>Customer First</h3>
             <p>Exceptional service tailored to your needs and expectations.</p>
           </div>
           <div class="value-card">
+            <i class="fas fa-lightbulb"></i>
             <h3>Innovation & Style</h3>
             <p>Stay ahead with stylish, cutting-edge upgrades for your bike.</p>
           </div>
@@ -67,11 +70,13 @@
 
     <!-- Footer Section -->
     <footer>
-      <p>&copy; 2024 CycleWorks Enterprises. All Rights Reserved.</p>
-      <div class="footer-icons">
-        <a href="https://www.facebook.com/profile.php?id=61555845413032"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com/cycleworkske/"><i class="fab fa-instagram"></i></a>
+      <div class="footer-content">
+        <p>&copy; 2024 CycleWorks Enterprises. All Rights Reserved.</p>
+        <div class="footer-icons">
+          <a href="https://www.facebook.com/profile.php?id=61555845413032"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/cycleworkske/"><i class="fab fa-instagram"></i></a>
+        </div>
       </div>
     </footer>
 

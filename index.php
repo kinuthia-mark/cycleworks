@@ -44,14 +44,17 @@
       <h2>Why Choose CycleWorks?</h2>
       <div class="features-grid">
         <div class="feature-card">
+          <i class="fas fa-tools"></i>
           <h3>Premium Quality</h3>
           <p>Only the best materials for unmatched performance and durability.</p>
         </div>
         <div class="feature-card">
+          <i class="fas fa-headset"></i>
           <h3>Customer Support</h3>
           <p>We're here to help you with all your biking needs, anytime.</p>
         </div>
         <div class="feature-card">
+          <i class="fas fa-tags"></i>
           <h3>Affordable Prices</h3>
           <p>Top-notch products at prices you can afford.</p>
         </div>

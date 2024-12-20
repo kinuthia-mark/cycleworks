@@ -1,36 +1,55 @@
-/* ===============================
-   Checkout Page Styles
-================================ */
+/* General Body Styling */
+body {
+  font-family: 'Calibri', Arial, sans-serif;
+  color: #fff;
+  overflow-x: hidden;
+  min-height: 100vh;
+  background: url('images/theme.png') center / cover no-repeat fixed;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Overlay */
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: relative;
+  min-height: 100vh;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
 
 /* Checkout Container */
 .checkout-container {
-  max-width: 600px; /* Set container width */
-  margin: 2rem auto; /* Center align */
+  max-width: 600px;
+  margin: 2rem auto;
   padding: 2rem;
-  background-color: rgba(255, 255, 255, 0.9); /* Slightly less transparent for better readability */
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-  color: #333; /* Text color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #333;
 }
 
 /* Form Header */
 .form-header {
   text-align: center;
-  color: #ff4c4c; /* Accent color */
+  color: #ff4c4c;
   margin-bottom: 2rem;
   font-size: 1.5rem;
 }
 
 /* Form Section */
 .form-section {
-  margin-bottom: 1.5rem; /* Space between form sections */
+  margin-bottom: 1.5rem;
 }
 
 /* Form Labels */
 label {
-  display: block; /* Make labels block elements */
+  display: block;
   margin-bottom: 0.5rem;
-  color: #333; /* Dark text */
+  color: #333;
   font-weight: bold;
 }
 
@@ -38,30 +57,30 @@ label {
 input,
 select,
 button {
-  width: 100%; /* Full width */
+  width: 100%;
   padding: 0.8rem;
   margin-bottom: 1rem;
-  border: 1px solid #ddd; /* Light grey border */
-  border-radius: 4px; /* Rounded corners */
+  border: 1px solid #ddd;
+  border-radius: 4px;
   font-size: 1rem;
 }
 
 /* Form Button */
 button {
-  background-color: #ff4c4c; /* Primary button color */
+  background-color: #ff4c4c;
   color: white;
   font-size: 1rem;
   font-weight: bold;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out; /* Smooth hover effect */
+  transition: background-color 0.3s ease-in-out;
 }
 
 button:hover {
-  background-color: #e63939; /* Darker red on hover */
+  background-color: #e63939;
 }
 
-/* Order Summary Styles */
+/* Order Summary */
 .order-summary {
   margin-bottom: 2rem;
   padding: 1rem;
@@ -82,43 +101,55 @@ button:hover {
   margin: 0.5rem 0;
 }
 
-/* Discount Section */
-.discount-section {
-  margin-bottom: 2rem;
-  padding: 1rem;
-  background-color: #f7f7f7;
-  border-radius: 8px;
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #000;
 }
 
-.discount-section label {
-  font-size: 1rem;
-  color: #333;
+.navbar .logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
 }
 
-.discount-section input {
-  display: inline-block;
-  width: 60%;
-  margin-right: 10px;
+.navbar .menu a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 1rem;
+  transition: color 0.3s;
 }
 
-.discount-section button {
-  display: inline-block;
-  width: 35%;
-  background-color: #28a745; /* Green for apply button */
+.navbar .menu a:hover,
+.navbar .menu a.active {
+  color: #ff4c4c;
 }
 
-.discount-section button:hover {
-  background-color: #218838; /* Darker green on hover */
+/* Footer */
+footer {
+  background: linear-gradient(90deg, #000, #ff4c4c);
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: auto;
 }
 
-/* Payment Fields - M-Pesa Specific */
-.mpesa-fields {
-  display: block; /* Always visible for M-Pesa */
+.footer-icons a {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  transition: color 0.3s;
 }
 
-/* Mobile Payment (M-Pesa) Number Input */
-#mpesa-number {
-  margin-bottom: 2rem; /* Space after M-Pesa number input */
+.footer-icons a:hover {
+  color: #00aaff;
 }
 
 /* Responsive Adjustments */
